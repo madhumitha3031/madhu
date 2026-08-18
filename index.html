@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhumitha V — Software Engineer & MCA Graduate</title>
+  <meta name="description" content="Portfolio of Madhumitha V, an MCA Graduate and Software Engineer specializing in Java, Full-Stack Development, Node.js, React, and Modern Web Systems.">
+  <meta name="keywords" content="Madhumitha V, Software Engineer, Full Stack Developer, Java, React, Node.js, MCA, Portfolio">
+  <meta name="author" content="Madhumitha V">
+
+  <!-- Google Fonts: Manrope & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Floating Minimal Navbar -->
+  <header class="site-header" id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-brand" id="brand-logo" aria-label="Madhumitha V Home">
+        <span class="brand-monogram">MV<span class="brand-dot">.</span></span>
+      </a>
+
+      <div class="nav-links-desktop">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#work" class="nav-link" data-section="work">Work</a>
+        <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="theme-toggle-icon">
+            <i class="fa-solid fa-moon dark-icon"></i>
+            <i class="fa-solid fa-sun light-icon"></i>
+          </span>
+          <span class="theme-toggle-text">Theme</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line top"></span>
+          <span class="hamburger-line bottom"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fullscreen Mobile Navigation Modal -->
+  <div class="mobile-nav-overlay" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link"><span>01</span> About</a>
+        <a href="#skills" class="mobile-nav-link"><span>02</span> Skills</a>
+        <a href="#experience" class="mobile-nav-link"><span>03</span> Experience</a>
+        <a href="#work" class="mobile-nav-link"><span>04</span> Selected Work</a>
+        <a href="#certifications" class="mobile-nav-link"><span>05</span> Certifications</a>
+        <a href="#contact" class="mobile-nav-link"><span>06</span> Contact</a>
+      </div>
+      <div class="mobile-nav-footer">
+        <div class="mobile-contact-info">
+          <span class="mobile-email">vmadhu8778@gmail.com</span>
+          <span class="mobile-phone">+91 8778320148</span>
+        </div>
+        <div class="mobile-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Scrollable Canvas -->
+  <main id="main-content" class="main-wrapper">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Left Column: Typography & Intent -->
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="hero-badge-tag">MCA GRADUATE</span>
+            <span class="badge-separator">/</span>
+            <span class="hero-badge-role">SOFTWARE ENGINEER</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-line"><span class="hero-line-inner">Hi,</span></span>
+            <span class="hero-line"><span class="hero-line-inner">This is <span class="text-accent">Madhumitha V</span></span></span>
+            <!-- <span class="hero-line"><span class="hero-line-inner">with purpose.</span></span> -->
+          </h1>
+
+          <p class="hero-description">
+            I am an MCA graduate focused on Java, full-stack development, databases and modern web technologies.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#work" class="btn btn-primary" id="hero-btn-work">
+              <span>VIEW MY WORK</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+              <span>LET'S TALK</span>
+            </a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <div class="meta-item">
+              <span class="meta-label">CURRENT FOCUS</span>
+              <span class="meta-val">Full-Stack & Distributed Backends</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-label">LOCATION</span>
+              <span class="meta-val">Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Abstract Developer / Product Interface -->
+        <div class="hero-visual" id="hero-visual">
+          <div class="product-window-card" id="code-window">
+            <div class="window-topbar">
+              <div class="window-controls">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <div class="window-tab-pill">
+                <i class="fa-solid fa-code text-accent"></i>
+                <span>AppWorkflow.java</span>
+              </div>
+              <div class="window-status">
+                <span class="status-indicator"></span>
+                <span>Active Runtime</span>
+              </div>
+            </div>
+
+            <div class="window-body">
+              <div class="code-editor">
+                <div class="line-numbers">
+                  <span>01</span>
+                  <span>02</span>
+                  <span>03</span>
+                  <span>04</span>
+                  <span>05</span>
+                  <span>06</span>
+                  <span>07</span>
+                  <span>08</span>
+                </div>
+                <div class="code-content">
+                  <p><span class="tok-kwd">package</span> <span class="tok-var">com.madhumitha.core</span>;</p>
+                  <p><span class="tok-kwd">public class</span> <span class="tok-cls">SoftwareEngineer</span> {</p>
+                  <p class="indent"><span class="tok-kwd">private final String</span> <span class="tok-prop">idea</span> = <span class="tok-str">"impact"</span>;</p>
+                  <p class="indent"><span class="tok-kwd">public void</span> <span class="tok-fn">build</span>() {</p>
+                  <p class="double-indent"><span class="tok-cls">Architecture</span>.<span class="tok-fn">deploy</span>(<span class="tok-prop">idea</span>, <span class="tok-num">9.17</span>);</p>
+                  <p class="indent">}</p>
+                  <p>}</p>
+                </div>
+              </div>
+
+              <div class="interface-dashboard-preview">
+                <div class="metric-row">
+                  <div class="metric-chip">
+                    <span class="metric-lbl">CORE RUNTIME</span>
+                    <span class="metric-data"><i class="fa-brands fa-java text-accent"></i> Java 21 / JVM</span>
+                  </div>
+                  <div class="metric-chip">
+                    <span class="metric-lbl">LATENCY</span>
+                    <span class="metric-data"><span class="text-accent">&lt; 14ms</span> / REST API</span>
+                  </div>
+                </div>
+
+                <div class="tech-stack-badges">
+                  <div class="float-badge badge-java" data-depth="0.15">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Java</span>
+                  </div>
+                  <div class="float-badge badge-react" data-depth="0.25">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React</span>
+                  </div>
+                  <div class="float-badge badge-node" data-depth="0.2">
+                    <i class="fa-brands fa-node-js"></i>
+                    <span>Node</span>
+                  </div>
+                  <div class="float-badge badge-mongo" data-depth="0.3">
+                    <i class="fa-solid fa-database"></i>
+                    <span>MongoDB</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="window-footer-bar">
+              <div class="commit-stat">
+                <i class="fa-solid fa-code-branch text-muted"></i>
+                <span>main &bull; 100% test coverage</span>
+              </div>
+              <span class="status-ready">Ready for Production</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-label-group reveal-group">
+          <span class="section-num">01</span>
+          <span class="section-title-tag">EDITORIAL PHILOSOPHY</span>
+        </div>
+
+        <div class="about-hero-statement reveal-group">
+          <h2 class="editorial-quote">
+            “Curious by nature.<br>
+            <span class="text-accent">Driven by technology.</span>”
+          </h2>
+        </div>
+
+        <div class="about-split-layout">
+          <!-- Left Column: Biography & Background -->
+          <div class="about-bio-col reveal-group">
+            <p class="bio-lead">
+              I am an aspiring Software Engineer with an MCA degree from K.S. Rangasamy College of Technology and a BCA foundation from Sacred Heart College. My approach pairs solid computer science fundamentals with an obsession for clean execution.
+            </p>
+            <p class="bio-detail">
+              From architecting scalable enterprise backend APIs with Java and Node.js to constructing responsive user experiences in React, I build systems that bridge user intent with reliable database engineering.
+            </p>
+            
+            <div class="about-attributes-grid">
+              <div class="attribute-block">
+                <span class="attr-title">Soft Skills</span>
+                <ul class="tag-cloud">
+                  <li>Problem Solving</li>
+                  <li>Teamwork</li>
+                  <li>Communication</li>
+                  <li>Adaptability</li>
+                  <li>Time Management</li>
+                  <li>Quick Learner</li>
+                </ul>
+              </div>
+              <div class="attribute-block">
+                <span class="attr-title">Languages Spoken</span>
+                <div class="lang-pills">
+                  <span class="lang-pill"><strong>English</strong> &bull; Professional</span>
+                  <span class="lang-pill"><strong>Tamil</strong> &bull; Native</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Dominant Metrics & Academic Milestones -->
+          <div class="about-stats-col reveal-group">
+            <div class="stats-card">
+              <div class="stat-item">
+                <div class="stat-number-wrap">
+                  <span class="stat-number text-accent">9.11</span>
+                </div>
+                <div class="stat-meta">
+                  <h3 class="stat-title">MCA CGPA</h3>
+                  <p class="stat-desc">K.S. Rangasamy College of Technology</p>
+                  <span class="stat-years">2025 &mdash; 2027</span>
+                </div>
+              </div>
+
+              <div class="stat-divider"></div>
+
+              <div class="stat-item">
+                <div class="stat-number-wrap">
+                  <span class="stat-number">8.48</span>
+                </div>
+                <div class="stat-meta">
+                  <h3 class="stat-title">BCA CGPA</h3>
+                  <p class="stat-desc">Sacred Heart College, Tirupattur (Thiruvalluvar Univ.)</p>
+                  <span class="stat-years">2022 &mdash; 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPOGRAPHY-FIRST SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header-block reveal-group">
+          <div class="section-label-group">
+            <span class="section-num">02</span>
+            <span class="section-title-tag">CORE CAPABILITIES</span>
+          </div>
+          <h2 class="section-headline">Things I work with.</h2>
+          <p class="section-subtext">A purposeful stack spanning strongly-typed backend architectures, modern web runtimes, relational & NoSQL data stores, and collaborative workflows.</p>
+        </div>
+
+        <div class="skills-editorial-grid">
+          <!-- 01 LANGUAGES -->
+          <div class="skill-category-row reveal-group" data-category="01">
+            <div class="category-indicator">
+              <span class="cat-num">01</span>
+              <h3 class="cat-name">LANGUAGES</h3>
+            </div>
+            <div class="skills-typography-list">
+              <div class="skill-item-typo" data-tech="Java">
+                <span class="skill-main-text">Java</span>
+                <span class="skill-subtag">Core / OOP / SE 8</span>
+              </div>
+              <div class="skill-item-typo" data-tech="Python">
+                <span class="skill-main-text">Python</span>
+                <span class="skill-subtag">ML & Scripting</span>
+              </div>
+              <div class="skill-item-typo" data-tech="JavaScript">
+                <span class="skill-main-text">JavaScript</span>
+                <span class="skill-subtag">ES6+ / Async</span>
+              </div>
+              <div class="skill-item-typo" data-tech="SQL">
+                <span class="skill-main-text">SQL</span>
+                <span class="skill-subtag">Queries & Joins</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 WEB -->
+          <div class="skill-category-row reveal-group" data-category="02">
+            <div class="category-indicator">
+              <span class="cat-num">02</span>
+              <h3 class="cat-name">WEB</h3>
+            </div>
+            <div class="skills-typography-list">
+              <div class="skill-item-typo" data-tech="React.js">
+                <span class="skill-main-text">React.js</span>
+                <span class="skill-subtag">Component Architecture</span>
+              </div>
+              <div class="skill-item-typo" data-tech="Node.js">
+                <span class="skill-main-text">Node.js</span>
+                <span class="skill-subtag">Server-side runtime</span>
+              </div>
+              <div class="skill-item-typo" data-tech="Express.js">
+                <span class="skill-main-text">Express.js</span>
+                <span class="skill-subtag">RESTful APIs</span>
+              </div>
+              <div class="skill-item-typo" data-tech="HTML5">
+                <span class="skill-main-text">HTML5</span>
+                <span class="skill-subtag">Semantic DOM</span>
+              </div>
+              <div class="skill-item-typo" data-tech="CSS3">
+                <span class="skill-main-text">CSS3</span>
+                <span class="skill-subtag">Layouts & Animations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 DATABASE -->
+          <div class="skill-category-row reveal-group" data-category="03">
+            <div class="category-indicator">
+              <span class="cat-num">03</span>
+              <h3 class="cat-name">DATABASE</h3>
+            </div>
+            <div class="skills-typography-list">
+              <div class="skill-item-typo" data-tech="MySQL">
+                <span class="skill-main-text">MySQL</span>
+                <span class="skill-subtag">Relational Schemas</span>
+              </div>
+              <div class="skill-item-typo" data-tech="MongoDB">
+                <span class="skill-main-text">MongoDB</span>
+                <span class="skill-subtag">NoSQL Collections</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 TOOLS -->
+          <div class="skill-category-row reveal-group" data-category="04">
+            <div class="category-indicator">
+              <span class="cat-num">04</span>
+              <h3 class="cat-name">TOOLS</h3>
+            </div>
+            <div class="skills-typography-list">
+              <div class="skill-item-typo" data-tech="GitHub">
+                <span class="skill-main-text">GitHub</span>
+                <span class="skill-subtag">Version Control & CI</span>
+              </div>
+              <div class="skill-item-typo" data-tech="VS Code">
+                <span class="skill-main-text">VS Code</span>
+                <span class="skill-subtag">Development Environment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header-block reveal-group">
+          <div class="section-label-group">
+            <span class="section-num">03</span>
+            <span class="section-title-tag">CAREER MILESTONE</span>
+          </div>
+          <h2 class="section-headline">Experience.</h2>
+        </div>
+
+        <div class="experience-showcase-card reveal-group">
+          <div class="experience-left-col">
+            <div class="exp-role-badge">TRAINEE INTERNSHIP</div>
+            <h3 class="exp-company">Astroblack Technologies</h3>
+            <p class="exp-title">Software Engineer Trainee Intern</p>
+            <div class="exp-timeline">
+              <i class="fa-regular fa-calendar text-accent"></i>
+              <span>FEB 2026 &mdash; JUL 2026</span>
+            </div>
+            <div class="exp-tech-chips">
+              <span>Full-Stack Development</span>
+              <span>RESTful Architecture</span>
+              <span>Git Workflows</span>
+            </div>
+          </div>
+
+          <div class="experience-right-col">
+            <h4 class="exp-deliverables-heading">Core Contributions & Responsibilities</h4>
+            <div class="exp-deliverables-list">
+              <div class="deliverable-item">
+                <span class="deliv-num">01</span>
+                <div class="deliv-content">
+                  <h5>Responsive Web Application Modules</h5>
+                  <p>Engineered clean, high-performance UI components delivering seamless responsiveness across desktop and mobile form factors.</p>
+                </div>
+              </div>
+
+              <div class="deliverable-item">
+                <span class="deliv-num">02</span>
+                <div class="deliv-content">
+                  <h5>REST APIs & Backend Integration</h5>
+                  <p>Developed server-side API endpoints, connecting structured databases with front-end clients via secure asynchronous HTTP request handling.</p>
+                </div>
+              </div>
+
+              <div class="deliverable-item">
+                <span class="deliv-num">03</span>
+                <div class="deliv-content">
+                  <h5>CRUD Operations & Data Integrity</h5>
+                  <p>Implemented full Create, Read, Update, Delete lifecycles with rigorous validation mechanisms to maintain database consistency.</p>
+                </div>
+              </div>
+
+              <div class="deliverable-item">
+                <span class="deliv-num">04</span>
+                <div class="deliv-content">
+                  <h5>Debugging, Testing & Optimization</h5>
+                  <p>Diagnosed logical bottlenecks, conducted component testing, and resolved code issues to ensure frictionless deployment readiness.</p>
+                </div>
+              </div>
+
+              <div class="deliverable-item">
+                <span class="deliv-num">05</span>
+                <div class="deliv-content">
+                  <h5>Git & GitHub Collaboration</h5>
+                  <p>Maintained clean branch hygiene, submitted pull requests, and participated in code synchronization within a modern team environment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK (PROJECTS) — BESPOKE PRODUCT SHOWCASE -->
+    <section class="section projects-section" id="work">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header-block reveal-group">
+          <div class="section-label-group">
+            <span class="section-num">04</span>
+            <span class="section-title-tag">SELECTED WORK</span>
+          </div>
+          <div class="work-header-flex">
+            <div>
+              <h2 class="section-headline">Things I've engineered.</h2>
+              <p class="section-subtext">A selection of production-grade systems spanning distributed full-stack enterprise applications and predictive machine learning architectures.</p>
+            </div>
+            
+            <!-- Quick Project Switcher Filter -->
+            <div class="project-view-filter" id="project-filter">
+              <button class="filter-btn active" data-target="all">All Projects (02)</button>
+              <button class="filter-btn" data-target="project-01">01. Workflow Platform</button>
+              <button class="filter-btn" data-target="project-02">02. Crop ML Engine</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-showcase-wrapper" id="projects-stack">
+          
+          <!-- =========================================================
+               PROJECT 01: INTEGRATED CORPORATE WORKFLOW PLATFORM
+               ========================================================= -->
+          <article class="project-spotlight-card project-card-1 reveal-group" id="project-01">
+            <!-- Project Top Header Strip -->
+            <div class="spotlight-top-strip">
+              <div class="spotlight-meta-left">
+                <span class="spotlight-number">01</span>
+                <div class="spotlight-type-badge">
+                  <i class="fa-solid fa-layer-group text-accent"></i>
+                  <span>Full-Stack Enterprise Architecture</span>
+                </div>
+              </div>
+              <div class="spotlight-status-pill">
+                <span class="status-dot"></span>
+                <span>REST API v2.4 &bull; Production Ready</span>
+              </div>
+            </div>
+
+            <!-- Spotlight Main Content Grid -->
+            <div class="spotlight-main-grid">
+              <!-- Left Column: Story, Architecture & Tech -->
+              <div class="spotlight-details">
+                <h3 class="spotlight-title">Integrated Corporate Workflow Platform</h3>
+                
+                <p class="spotlight-lead">
+                  A high-throughput enterprise workflow system built to orchestrate team operations, role hierarchies, and multi-tier task pipelines with real-time auditability.
+                </p>
+
+                <!-- Tech Stack Chips -->
+                <div class="spotlight-tech-bar">
+                  <span class="tech-chip"><i class="fa-brands fa-react"></i> React.js</span>
+                  <span class="tech-chip"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                  <span class="tech-chip"><i class="fa-solid fa-server"></i> Express.js</span>
+                  <span class="tech-chip"><i class="fa-solid fa-database"></i> MongoDB</span>
+                </div>
+
+                <!-- Interactive Architecture Feature Matrix -->
+                <div class="arch-feature-matrix">
+                  <div class="arch-box active" data-feature="rbac">
+                    <div class="arch-box-head">
+                      <i class="fa-solid fa-shield-halved text-accent"></i>
+                      <span>Role-Based Access Control</span>
+                    </div>
+                    <p class="arch-box-desc">Granular RBAC middleware securing routes with stateless JWT cryptographic token verification.</p>
+                  </div>
+
+                  <div class="arch-box" data-feature="crud">
+                    <div class="arch-box-head">
+                      <i class="fa-solid fa-bolt text-accent"></i>
+                      <span>CRUD &amp; Schema Pipeline</span>
+                    </div>
+                    <p class="arch-box-desc">Fully indexed MongoDB collections supporting sub-15ms asynchronous read/write cycles.</p>
+                  </div>
+                </div>
+
+                <!-- Live Engineering Telemetry -->
+                <div class="spotlight-metrics-row">
+                  <div class="metric-block">
+                    <span class="metric-tag">AUTH SPEC</span>
+                    <strong class="metric-val">JWT / HMAC-SHA256</strong>
+                  </div>
+                  <div class="metric-block">
+                    <span class="metric-tag">LATENCY</span>
+                    <strong class="metric-val text-accent">&lt; 14ms Response</strong>
+                  </div>
+                  <div class="metric-block">
+                    <span class="metric-tag">TEST COVERAGE</span>
+                    <strong class="metric-val">100% Endpoints</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive Digital Product Canvas -->
+              <div class="spotlight-canvas">
+                <div class="app-console-window">
+                  <!-- Console Topbar -->
+                  <div class="console-topbar">
+                    <div class="console-dots">
+                      <span class="d-red"></span><span class="d-yel"></span><span class="d-grn"></span>
+                    </div>
+                    <div class="console-route-pill">
+                      <i class="fa-solid fa-lock text-accent"></i>
+                      <span>app.workflow.internal/live-board</span>
+                    </div>
+                    <div class="console-role-tag">
+                      <i class="fa-solid fa-user-shield text-accent"></i> Admin: MV
+                    </div>
+                  </div>
+
+                  <!-- Console Mode Selector Tabs -->
+                  <div class="console-subnav">
+                    <div class="console-tab-group">
+                      <button class="c-tab-btn active" id="btn-tab-board" data-pane="board">
+                        <i class="fa-solid fa-table-columns"></i> Pipeline Board
+                      </button>
+                      <button class="c-tab-btn" id="btn-tab-api" data-pane="api">
+                        <i class="fa-solid fa-terminal"></i> API Stream
+                      </button>
+                    </div>
+                    <button class="action-pulse-btn" id="btn-dispatch-event">
+                      <i class="fa-solid fa-play text-accent"></i>
+                      <span>Dispatch CRUD Event</span>
+                    </button>
+                  </div>
+
+                  <!-- Console Display Body -->
+                  <div class="console-viewport">
+                    <!-- Pane 1: Kanban Pipeline Board -->
+                    <div class="console-pane active" id="pane-board">
+                      <div class="board-swimlanes">
+                        <!-- Column 1 -->
+                        <div class="swimlane-col">
+                          <div class="swimlane-header">
+                            <span class="lane-name">In Progress</span>
+                            <span class="lane-badge">2</span>
+                          </div>
+                          <div class="swimlane-cards">
+                            <div class="task-card">
+                              <div class="tc-header">
+                                <span class="tc-pill api">REST API</span>
+                                <span class="tc-prio">P1</span>
+                              </div>
+                              <h5 class="tc-title">RBAC Route Middleware</h5>
+                              <p class="tc-desc">Node.js / Express token validation</p>
+                              <div class="tc-footer">
+                                <span><i class="fa-regular fa-clock"></i> 2h ago</span>
+                                <span class="text-accent"><i class="fa-solid fa-circle-check"></i> Passed</span>
+                              </div>
+                            </div>
+                            <div class="task-card">
+                              <div class="tc-header">
+                                <span class="tc-pill db">Database</span>
+                                <span class="tc-prio">P2</span>
+                              </div>
+                              <h5 class="tc-title">Compound Mongo Indexing</h5>
+                              <p class="tc-desc">Query latency reduction</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="swimlane-col">
+                          <div class="swimlane-header">
+                            <span class="lane-name">Deployed &amp; Verified</span>
+                            <span class="lane-badge complete">3</span>
+                          </div>
+                          <div class="swimlane-cards">
+                            <div class="task-card verified">
+                              <div class="tc-header">
+                                <span class="tc-pill ui">React 18</span>
+                                <span class="tc-check text-accent"><i class="fa-solid fa-check-double"></i></span>
+                              </div>
+                              <h5 class="tc-title">Stateful Pipeline Dashboard</h5>
+                              <p class="tc-desc">Component-driven data stream</p>
+                            </div>
+                            <div class="task-card verified">
+                              <div class="tc-header">
+                                <span class="tc-pill sec">Security</span>
+                                <span class="tc-check text-accent"><i class="fa-solid fa-check-double"></i></span>
+                              </div>
+                              <h5 class="tc-title">Cross-Site Token Protection</h5>
+                              <p class="tc-desc">Zero-trust security schema</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Pane 2: Live REST API Stream -->
+                    <div class="console-pane" id="pane-api">
+                      <div class="terminal-log-stream">
+                        <div class="log-entry">
+                          <span class="log-verb post">POST</span>
+                          <span class="log-path">/api/v2/auth/login</span>
+                          <span class="log-res text-accent">200 OK</span>
+                          <span class="log-ms">11ms</span>
+                        </div>
+                        <div class="log-entry">
+                          <span class="log-verb get">GET</span>
+                          <span class="log-path">/api/v2/workflows/active</span>
+                          <span class="log-res text-accent">200 OK</span>
+                          <span class="log-ms">14ms</span>
+                        </div>
+                        <div class="log-entry">
+                          <span class="log-verb put">PUT</span>
+                          <span class="log-path">/api/v2/tasks/pipeline-917</span>
+                          <span class="log-res text-accent">204 Updated</span>
+                          <span class="log-ms">8ms</span>
+                        </div>
+                        <div class="terminal-json-viewer">
+                          <span class="json-label">// Response Body (application/json)</span>
+                          <code>{
+  "status": "SUCCESS",
+  "actor": "Madhumitha V (Admin)",
+  "crud_operation": "UPDATE_TASK_STATE",
+  "latency_ms": 1.2,
+  "db_replica": "MongoDB Primary [Healthy]"
+}</code>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Console Status Footer -->
+                  <div class="console-footer-bar">
+                    <div class="c-foot-item">
+                      <i class="fa-solid fa-circle text-accent pulse-fast"></i>
+                      <span>Cluster: <strong>us-east-cluster-01</strong></span>
+                    </div>
+                    <div class="c-foot-item">
+                      <span>CRUD State: <strong class="text-accent" id="crud-state-label">Synchronized</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- =========================================================
+               PROJECT 02: CROP RECOMMENDATION SYSTEM
+               ========================================================= -->
+          <article class="project-spotlight-card project-card-2 reveal-group" id="project-02">
+            <!-- Project Top Header Strip -->
+            <div class="spotlight-top-strip">
+              <div class="spotlight-meta-left">
+                <span class="spotlight-number">02</span>
+                <div class="spotlight-type-badge">
+                  <i class="fa-solid fa-brain text-accent"></i>
+                  <span>Machine Learning &amp; Agritech Intelligence</span>
+                </div>
+              </div>
+              <div class="spotlight-status-pill">
+                <span class="status-dot"></span>
+                <span>SVM RBF Kernel &bull; 97.8% Accuracy</span>
+              </div>
+            </div>
+
+            <!-- Spotlight Main Content Grid -->
+            <div class="spotlight-main-grid">
+              <!-- Left Column: Story, Architecture & Tech -->
+              <div class="spotlight-details">
+                <h3 class="spotlight-title">Crop Recommendation System</h3>
+                
+                <p class="spotlight-lead">
+                  An intelligent agricultural prediction engine powered by Support Vector Machines (SVM). It computes multi-dimensional soil chemistry vectors alongside dynamic weather patterns to recommend optimal crop yields.
+                </p>
+
+                <!-- Tech Stack Chips -->
+                <div class="spotlight-tech-bar">
+                  <span class="tech-chip"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="tech-chip"><i class="fa-solid fa-brain"></i> Scikit-Learn</span>
+                  <span class="tech-chip"><i class="fa-solid fa-chart-pie"></i> SVM Classifier</span>
+                  <span class="tech-chip"><i class="fa-solid fa-seedling"></i> Agritech ML</span>
+                </div>
+
+                <!-- Soil Vector Preset Selectors -->
+                <div class="ml-preset-selector-block">
+                  <span class="ml-preset-heading">SELECT TEST SOIL PROFILE:</span>
+                  <div class="ml-preset-chips" id="ml-preset-group">
+                    <button class="ml-chip active" data-crop="Rice / Paddy" data-conf="98.4%" data-n="90" data-p="42" data-k="43" data-env="24°C / 82% Humidity" data-soil="Alluvial Soil (High Nitrogen)">
+                      🌾 Paddy (Alluvial)
+                    </button>
+                    <button class="ml-chip" data-crop="Maize / Corn" data-conf="96.2%" data-n="75" data-p="60" data-k="20" data-env="26°C / 65% Humidity" data-soil="Loamy Soil (Balanced NPK)">
+                      🌽 Maize (Loamy)
+                    </button>
+                    <button class="ml-chip" data-crop="Cotton" data-conf="97.1%" data-n="118" data-p="48" data-k="19" data-env="25°C / 78% Humidity" data-soil="Black Soil (High N-P)">
+                      🌱 Cotton (Black Soil)
+                    </button>
+                    <button class="ml-chip" data-crop="Coffee" data-conf="95.8%" data-n="102" data-p="28" data-k="32" data-env="22°C / 88% Humidity" data-soil="Hill Acidic Soil">
+                      ☕ Coffee (Hill Soil)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Live Engineering Telemetry -->
+                <div class="spotlight-metrics-row">
+                  <div class="metric-block">
+                    <span class="metric-tag">ALGORITHM</span>
+                    <strong class="metric-val">SVC (RBF Kernel)</strong>
+                  </div>
+                  <div class="metric-block">
+                    <span class="metric-tag">INFERENCE TIME</span>
+                    <strong class="metric-val text-accent">1.8ms / Vector</strong>
+                  </div>
+                  <div class="metric-block">
+                    <span class="metric-tag">DATASET SAMPLES</span>
+                    <strong class="metric-val">Multi-Class NPK</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive ML Inference Canvas -->
+              <div class="spotlight-canvas">
+                <div class="ml-inference-window">
+                  <!-- Topbar -->
+                  <div class="console-topbar">
+                    <div class="console-dots">
+                      <span class="d-red"></span><span class="d-yel"></span><span class="d-grn"></span>
+                    </div>
+                    <div class="console-route-pill">
+                      <i class="fa-solid fa-microchip text-accent"></i>
+                      <span>svm.engine.local/predict</span>
+                    </div>
+                    <div class="console-role-tag">
+                      <span class="status-indicator"></span> Model: Active
+                    </div>
+                  </div>
+
+                  <!-- ML Canvas Body -->
+                  <div class="ml-canvas-body">
+                    <!-- Top Telemetry Row: Nutrient Sliders -->
+                    <div class="ml-nutrients-matrix">
+                      <div class="nutrient-meter">
+                        <div class="meter-info">
+                          <span>Nitrogen (N)</span>
+                          <strong class="text-accent" id="txt-n">90 mg/kg</strong>
+                        </div>
+                        <div class="meter-track"><div class="meter-fill" id="track-n" style="width: 75%;"></div></div>
+                      </div>
+
+                      <div class="nutrient-meter">
+                        <div class="meter-info">
+                          <span>Phosphorus (P)</span>
+                          <strong class="text-accent" id="txt-p">42 mg/kg</strong>
+                        </div>
+                        <div class="meter-track"><div class="meter-fill" id="track-p" style="width: 52%;"></div></div>
+                      </div>
+
+                      <div class="nutrient-meter">
+                        <div class="meter-info">
+                          <span>Potassium (K)</span>
+                          <strong class="text-accent" id="txt-k">43 mg/kg</strong>
+                        </div>
+                        <div class="meter-track"><div class="meter-fill" id="track-k" style="width: 54%;"></div></div>
+                      </div>
+
+                      <div class="nutrient-meter">
+                        <div class="meter-info">
+                          <span>Atmospheric Vector</span>
+                          <strong id="txt-env">24°C / 82% Humidity</strong>
+                        </div>
+                        <div class="meter-track"><div class="meter-fill" id="track-env" style="width: 82%;"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Main Prediction Output Box -->
+                    <div class="ml-prediction-banner">
+                      <div class="pred-banner-left">
+                        <span class="pred-kicker">SVM OPTIMAL CLASSIFICATION</span>
+                        <h4 class="pred-target-crop text-accent" id="txt-crop-name">Rice / Paddy</h4>
+                        <span class="pred-soil-type" id="txt-soil-type">Alluvial Soil (High Nitrogen)</span>
+                      </div>
+
+                      <div class="pred-banner-right">
+                        <div class="conf-ring-card">
+                          <span class="conf-title">Confidence</span>
+                          <span class="conf-percentage text-accent" id="txt-conf-val">98.4%</span>
+                          <div class="conf-bar-micro">
+                            <div class="conf-bar-micro-fill" id="track-conf" style="width: 98.4%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Hyperplane & Decision Space Data -->
+                    <div class="ml-decision-footer">
+                      <div class="dec-item">
+                        <span class="dec-lbl">Kernel Function</span>
+                        <span class="dec-val">Radial Basis Function (RBF)</span>
+                      </div>
+                      <div class="dec-item">
+                        <span class="dec-lbl">Hyperplane Margin</span>
+                        <span class="dec-val text-accent">Optimal Separation &bull; 97.8%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS LIST -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        <div class="section-header-block reveal-group">
+          <div class="section-label-group">
+            <span class="section-num">05</span>
+            <span class="section-title-tag">VERIFIED CREDENTIALS</span>
+          </div>
+          <h2 class="section-headline">Certifications.</h2>
+        </div>
+
+        <div class="certifications-list reveal-group">
+          <!-- 01 -->
+          <div class="cert-row-item">
+            <div class="cert-index">01</div>
+            <div class="cert-details">
+              <span class="cert-issuer">NPTEL</span>
+              <h3 class="cert-name">The Joy of Computing Using Python</h3>
+            </div>
+            <div class="cert-category">Python & Algorithmic Thinking</div>
+            <div class="cert-arrow-wrap">
+              <i class="fa-solid fa-arrow-right cert-arrow"></i>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="cert-row-item">
+            <div class="cert-index">02</div>
+            <div class="cert-details">
+              <span class="cert-issuer">MongoDB</span>
+              <h3 class="cert-name">MongoDB Overview: Core Concepts and Architecture</h3>
+            </div>
+            <div class="cert-category">NoSQL & Document Modeling</div>
+            <div class="cert-arrow-wrap">
+              <i class="fa-solid fa-arrow-right cert-arrow"></i>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="cert-row-item">
+            <div class="cert-index">03</div>
+            <div class="cert-details">
+              <span class="cert-issuer">NoviTech R&D Pvt. Ltd.</span>
+              <h3 class="cert-name">30-Day Full Stack Development MasterClass</h3>
+            </div>
+            <div class="cert-category">MERN Stack & Full-Stack Systems</div>
+            <div class="cert-arrow-wrap">
+              <i class="fa-solid fa-arrow-right cert-arrow"></i>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="cert-row-item">
+            <div class="cert-index">04</div>
+            <div class="cert-details">
+              <span class="cert-issuer">Infosys Springboard</span>
+              <h3 class="cert-name">Java SE 8 Features</h3>
+            </div>
+            <div class="cert-category">Lambdas, Streams & JVM Core</div>
+            <div class="cert-arrow-wrap">
+              <i class="fa-solid fa-arrow-right cert-arrow"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-inner-wrapper reveal-group">
+          <div class="section-label-group">
+            <span class="section-num">06</span>
+            <span class="section-title-tag">GET IN TOUCH</span>
+          </div>
+
+          <h2 class="contact-headline">
+            Let's build<br>
+            <span class="text-accent">something meaningful.</span>
+          </h2>
+
+          <p class="contact-subheadline">
+            Open for software engineering opportunities, full-stack development, and high-impact engineering teams.
+          </p>
+
+          <div class="contact-direct-channels">
+            <div class="contact-primary-block">
+              <span class="channel-label">DIRECT EMAIL</span>
+              <a href="mailto:vmadhu8778@gmail.com" class="direct-email-link" id="contact-email-link">
+                <span>vmadhu8778@gmail.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-secondary-grid">
+              <div class="contact-sec-item">
+                <span class="channel-label">PHONE NUMBER</span>
+                <a href="tel:+918778320184" class="sec-link-val">
+                  <i class="fa-solid fa-phone text-accent"></i>
+                  <span>+91 8778320184</span>
+                </a>
+              </div>
+
+              <div class="contact-sec-item">
+                <span class="channel-label">SOCIAL PROFILES</span>
+                <div class="social-links-row">
+                  <a href="https://www.linkedin.com/in/madhumitha-v-90a563349/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>LinkedIn ↗</span>
+                  </a>
+                  <a href="https://github.com/madhumitha3031" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub ↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINIMAL FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <span class="footer-name">Madhumitha V</span>
+          <span class="footer-role">MCA Graduate &bull; Software Engineer</span>
+        </div>
+        <div class="footer-center">
+          <span class="footer-copy">&copy; 2026 Madhumitha V. All rights reserved.</span>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.linkedin.com/in/madhumitha-v-90a563349/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+          <a href="https://github.com/madhumitha3031" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+          <a href="mailto:vmadhu8778@gmail.com" class="footer-link">Email</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- External JavaScript Libraries: GSAP, ScrollTrigger, Lenis Smooth Scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Main JavaScript Application -->
+  <script src="./script.js"></script>
+</body>
+</html>
